@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}My Hogwarts Page{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Welcome to Hogwarts School of Witchcraft and Wizardry</h1>
+        <p>Explore the magical world of young witches and wizards at Hogwarts using CRUD operations.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h2>About Hogwarts</h2>
+            <p>Hogwarts School of Witchcraft and Wizardry is a magical school where young witches and wizards receive their education in the art of magic.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>CRUD Operations</h2>
+            <p>Perform CRUD (Create, Read, Update, Delete) operations to manage student records and more at Hogwarts.</p>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a class="btn btn-primary" href="/students">View Students</a>
+        <a class="btn btn-success" href="/courses">Explore Courses</a>
+    </div>
+</div>
+{% endblock %}
